@@ -30,6 +30,7 @@ dnf5 install -y \
 # accept the third-party-binary risk or build from source instead.
 dnf5 copr enable -y scottames/ghostty
 dnf5 install -y ghostty
+dnf5 -y copr disable scottames/ghostty
 
 # Bake the dracut fido2 module via usr/etc/
 dnf5 install -y libfido2 systemd-udev
